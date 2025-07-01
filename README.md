@@ -1,2 +1,234 @@
 # mysql-database
-## testing
+## SELECT QUERY Guide
+This document explains SQL SELECT queries step-by-step with keywords, clauses, conditions, and examples. It is written in plain format for learning, revision, or adding to a GitHub README.
+
+---
+
+## 1. SELECT — Basic Keyword
+
+**Used to fetch data from a table.**
+
+```sql
+SELECT column1, column2 FROM table_name;
+```
+
+**Example:**
+
+```sql
+SELECT name, age FROM students;
+```
+
+---
+
+## 2. SELECT \* — Select All Columns
+
+```sql
+SELECT * FROM students;
+```
+
+*Get all data from the students table.*
+
+---
+
+## 3. WHERE — Filter Rows
+
+```sql
+SELECT * FROM students WHERE age > 18;
+```
+
+*Get students older than 18.*
+
+---
+
+## 4. AND(&&), OR(||), NOT(!=) — Combine Conditions
+
+**AND(&&):**
+
+```sql
+SELECT * FROM students WHERE age > 18 AND gender = 'Female';
+```
+```sql
+SELECT * FROM students WHERE age > 18 && gender = 'Female';
+```
+
+**OR(||):**
+
+```sql
+SELECT * FROM students WHERE course = 'BCA' OR course = 'MBA';
+```
+```sql
+SELECT * FROM students WHERE course = 'BCA' || course = 'MBA';
+```
+
+**NOT(!=):**
+
+```sql
+SELECT * FROM students WHERE NOT gender = 'Male';
+```
+```sql
+SELECT * FROM students WHERE gender != 'Male';
+```
+---
+
+## 5. ORDER BY — Sort the Results
+
+**Ascending Order:**
+
+```sql
+SELECT * FROM students ORDER BY age ASC;
+```
+
+**Descending Order:**
+
+```sql
+SELECT * FROM students ORDER BY name DESC;
+```
+
+---
+
+## 6. LIMIT — Restrict Number of Rows (Offest, total records value)
+```sql
+SELECT * FROM students LIMIT 2, 5;
+```
+*LIMIT 2, 5 means 2 is offset which start row with 3 and 5 is total number of records get from table.*
+*Offset always start with 0 so suppose if we have offset 2 then it will start with 3 row*
+
+```sql
+SELECT * FROM students LIMIT 3;
+```
+
+*Show only the first 3 students.*
+
+---
+
+## 7. LIKE — Pattern Matching
+
+**Starts with 'P':**
+
+```sql
+SELECT * FROM students WHERE name LIKE 'P%';
+```
+
+**Ends with 'ya':**
+
+```sql
+SELECT * FROM students WHERE name LIKE '%ya';
+```
+
+**Search where name and department must have i from employee table**
+```sql
+SELECT * FROM `testDB`.`employees` where name like '%i%' or department like '%i%';
+```
+
+---
+
+## 8. IN — Match Multiple Values
+
+```sql
+SELECT * FROM students WHERE course IN ('BCA', 'BBA');
+```
+
+---
+
+## 9. BETWEEN — Match Range
+
+```sql
+SELECT * FROM students WHERE age BETWEEN 18 AND 22;
+```
+
+---
+
+## 10. IS NULL / IS NOT NULL
+
+**Check for null:**
+
+```sql
+SELECT * FROM students WHERE email IS NULL;
+```
+
+**Check for not null:**
+
+```sql
+SELECT * FROM students WHERE email IS NOT NULL;
+```
+
+---
+
+## 11. DISTINCT — Unique Values
+
+```sql
+SELECT DISTINCT course FROM students;
+```
+
+---
+
+## 12. AS (Alias) — Rename Columns
+
+```sql
+SELECT name AS student_name, age AS student_age FROM students;
+```
+
+---
+
+## 13. JOIN — Combine Tables
+
+```sql
+SELECT students.name, courses.course_name
+FROM students
+JOIN enrollments ON students.student_id = enrollments.student_id
+JOIN courses ON courses.course_id = enrollments.course_id;
+```
+
+---
+
+## 14. GROUP BY — Group Results
+*Used to group rows that have the same values into summary rows. Often used with aggregate functions.*
+```sql
+SELECT course, COUNT(*) FROM students GROUP BY course;
+```
+
+---
+
+## 15. HAVING — Filter Grouped Data
+*Used to filter records after GROUP BY is applied. WHERE cannot be used here.*
+```sql
+SELECT course, COUNT(*)
+FROM students
+GROUP BY course
+HAVING COUNT(*) > 1;
+```
+```sql
+SELECT department, count(*) as number_of_records FROM `testDB`.`employees` GROUP BY department HAVING number_of_records >= 2 order by number_of_records ASC
+```
+---
+
+## 16. Aggregate Functions
+
+| Function | Description   | Example                         |
+| -------- | ------------- | ------------------------------- |
+| COUNT()  | Count rows    | SELECT COUNT(\*) FROM students; |
+| SUM()    | Add values    | SELECT SUM(marks) FROM marks;   |
+| AVG()    | Average value | SELECT AVG(age) FROM students;  |
+| MAX()    | Highest value | SELECT MAX(age) FROM students;  |
+| MIN()    | Lowest value  | SELECT MIN(age) FROM students;  |
+
+---
+
+## 17. Final Example — Combined Query
+
+```sql
+SELECT name
+FROM students
+WHERE age > 18 AND gender = 'Female'
+ORDER BY name ASC
+LIMIT 3;
+```
+
+---
+
+**Tip:** Use this guide as a cheat sheet for interviews, daily work, or practice.
+
+---
+
+> Created for SQL beginners & testers who want a clear, plain-English note.
+
