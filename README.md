@@ -268,5 +268,19 @@ LIMIT 3;
 
 
 
----
+# Insert Qery # 
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
 
+# INSERT INTO Example
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+
+# SQL DELETE
+DELETE FROM table_name WHERE condition;
+Example
+DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+# DROP TABLE
+ DROP TABLE table_name;
+ # Example 
+ DROP TABLE Shippers;
