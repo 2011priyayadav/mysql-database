@@ -186,7 +186,6 @@ JOIN courses ON courses.course_id = enrollments.course_id;
 ```sql
 SELECT course, COUNT(*) FROM students GROUP BY course;
 ```
-
 ---
 
 ## 15. HAVING — Filter Grouped Data
@@ -223,12 +222,24 @@ WHERE age > 18 AND gender = 'Female'
 ORDER BY name ASC
 LIMIT 3;
 ```
+---
+##Join##
+*A JOIN in SQL is used to combine rows from two or more tables based on a related column between them (usually a foreign key).*
+
+**Types of JOINs in MySQL**
+| JOIN Type         | Description                                                                                                     |
+| ----------------- | --------------------------------------------------------------------------------------------------------------- |
+| `INNER JOIN`      | Only returns rows with matching values in both tables.                                                          |
+| `LEFT JOIN`       | Returns all rows from the left table, and matched rows from the right.                                          |
+| `RIGHT JOIN`      | Returns all rows from the right table, and matched rows from the left.                                          |
+| `FULL OUTER JOIN` | Returns all rows when there is a match in one of the tables. (Not supported directly in MySQL — needs `UNION`). |
+| `SELF JOIN`       | Join a table with itself.                                                                                       |
+| `CROSS JOIN`      | Returns Cartesian product (all combinations).                                                                   |
+
+**1. INNER JOIN**
+- Returns rows where there is a match in both tables
+
+
 
 ---
-
-**Tip:** Use this guide as a cheat sheet for interviews, daily work, or practice.
-
----
-
-> Created for SQL beginners & testers who want a clear, plain-English note.
 
