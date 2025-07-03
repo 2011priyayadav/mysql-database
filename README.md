@@ -282,5 +282,5 @@ Example
 DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
 # DROP TABLE
  DROP TABLE table_name;
- # Example 
- DROP TABLE Shippers;
+** Example** : 
+DROP TABLE Shippers;
