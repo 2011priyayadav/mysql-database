@@ -288,3 +288,17 @@ DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
  DROP TABLE table_name;
 ** Example** : 
 DROP TABLE Shippers;
+## constraints in SQL
+
+```sql
+NOT NULL: Ensures a column cannot have NULL values.
+
+UNIQUE: Ensures all values in a column are distinct.
+
+PRIMARY KEY: Uniquely identifies each row in a table.
+
+FOREIGN KEY: Ensures referential integrity by linking to a primary key in another table.
+
+CHECK: Ensures that all values in a column satisfy a specific condition.
+
+DEFAULT: Sets a default value for a column when no value is specified.
