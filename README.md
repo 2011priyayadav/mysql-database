@@ -302,3 +302,21 @@ FOREIGN KEY: Ensures referential integrity by linking to a primary key in anothe
 CHECK: Ensures that all values in a column satisfy a specific condition.
 
 DEFAULT: Sets a default value for a column when no value is specified.
+
+## difference between DDL and DML commands?
+```SQL
+1. DDL (Data Definition Language):
+
+These commands are used to define and modify the structure of database objects such as tables, indexes, and views.
+For example, the CREATE command creates a new table, the ALTER command modifies an existing table, and the DROP command removes a table entirely. DDL commands primarily focus on the schema or structure of the database.
+```
+
+```SQL
+2. DML (Data Manipulation Language):
+
+These commands deal with the actual data stored within database objects. For instance, the INSERT command adds rows of data to a table, the UPDATE command modifies existing data, and the DELETE command removes rows from a table. In short, DML commands allow you to query and manipulate the data itself rather than the structure.
+
+Example:
+
+INSERT INTO Employees (ID, Name) VALUES (1, 'Alice');
+```
