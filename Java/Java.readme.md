@@ -205,3 +205,52 @@ Math.methodName(arguments);
 | `Math.toDegrees(x)` | Converts radians to degrees                  | `Math.toDegrees(Math.PI)` | `180.0`      |
 | `Math.signum(x)`    | Returns sign of number (-1, 0, or 1)         | `Math.signum(-5)`         | `-1.0`       |
 
+----
+## Java Booleans
+
+### ✅ Definition
+
+In Java, a **boolean** is a data type that can hold only **two values**: `true` or `false`. It is often used in conditional statements, loops, and logic operations.
+
+**Syntax:**
+```java
+boolean isJavaFun = true;
+boolean isHot = false;
+```
+| Concept             | Description                      | Example Code                                    | Output                                 |           |   |            |        |
+| ------------------- | -------------------------------- | ----------------------------------------------- | -------------------------------------- | --------- | - | ---------- | ------ |
+| Boolean Declaration | Declare a boolean variable       | `boolean isJavaFun = true;`                     | `true`                                 |           |   |            |        |
+| Comparison Result   | Returns boolean after comparison | `5 > 3`                                         | `true`                                 |           |   |            |        |
+| Logical AND (`&&`)  | True if both conditions are true | `(5 > 3) && (10 > 5)`                           | `true`                                 |           |   |            |        |
+| Logical OR (\`      |                                  | \`)                                             | True if at least one condition is true | \`(5 < 3) |   | (10 > 5)\` | `true` |
+| Logical NOT (`!`)   | Inverts boolean value            | `!(5 > 3)`                                      | `false`                                |           |   |            |        |
+| Boolean in `if`     | Used in conditional statements   | `if (isJavaFun) { System.out.println("Yes"); }` | `Yes`                                  |           |   |            |        |
+## Example:
+```java
+public class BooleanExample {
+    public static void main(String[] args) {
+        boolean isJavaFun = true;
+        boolean isFishTasty = false;
+
+        System.out.println(isJavaFun);          // true
+        System.out.println(isFishTasty);        // false
+
+        System.out.println(10 > 5);             // true
+        System.out.println(10 < 5);             // false
+
+        // Logical operators
+        boolean result = (5 > 3) && (8 > 5);     // true
+        System.out.println(result);
+
+        // Using NOT operator
+        System.out.println(!(5 > 3));           // false
+
+        // Conditional check
+        if (isJavaFun) {
+            System.out.println("Java is fun!");
+        }
+    }
+}
+```
+----
+
