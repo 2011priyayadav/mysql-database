@@ -174,4 +174,34 @@ Operators in Java are used to perform operations on variables and values.
 | String → char\[] | `.toCharArray()`     | `"Java".toCharArray()`            | `['J','a','v','a']` |
 | char\[] → String | `new String(char[])` | `new String(new char[]{'A','B'})` | `"AB"`              |
 
+----
+## Java MATH
+Java provides a built-in `Math` class in the `java.lang` package that contains methods for performing basic numeric operations such as exponentiation, rounding, square roots, trigonometry, and more.
+### ✅ Definition
+The `Math` class in Java provides static methods to perform common mathematical tasks. Since all methods are `static`, you do not need to create an object to use them.
+**Syntax:**
+```java
+Math.methodName(arguments);
+```
+| Method              | Description                                  | Example Code              | Output       |
+| ------------------- | -------------------------------------------- | ------------------------- | ------------ |
+| `Math.abs(x)`       | Returns absolute (positive) value            | `Math.abs(-10)`           | `10`         |
+| `Math.max(a, b)`    | Returns the greater of two values            | `Math.max(5, 9)`          | `9`          |
+| `Math.min(a, b)`    | Returns the smaller of two values            | `Math.min(5, 9)`          | `5`          |
+| `Math.sqrt(x)`      | Returns square root                          | `Math.sqrt(25)`           | `5.0`        |
+| `Math.cbrt(x)`      | Returns cube root                            | `Math.cbrt(27)`           | `3.0`        |
+| `Math.pow(a, b)`    | Returns a raised to the power of b           | `Math.pow(2, 3)`          | `8.0`        |
+| `Math.round(x)`     | Rounds to the nearest whole number           | `Math.round(4.6)`         | `5`          |
+| `Math.ceil(x)`      | Rounds **up** to nearest integer             | `Math.ceil(4.1)`          | `5.0`        |
+| `Math.floor(x)`     | Rounds **down** to nearest integer           | `Math.floor(4.9)`         | `4.0`        |
+| `Math.random()`     | Returns random number between 0.0 and 1.0    | `Math.random()`           | `0.0 to 1.0` |
+| `Math.log(x)`       | Returns natural logarithm (base e)           | `Math.log(10)`            | `2.302...`   |
+| `Math.log10(x)`     | Returns logarithm base 10                    | `Math.log10(100)`         | `2.0`        |
+| `Math.exp(x)`       | Returns Euler’s number raised to the power x | `Math.exp(1)`             | `2.718...`   |
+| `Math.sin(x)`       | Returns sine (radians)                       | `Math.sin(Math.PI/2)`     | `1.0`        |
+| `Math.cos(x)`       | Returns cosine (radians)                     | `Math.cos(0)`             | `1.0`        |
+| `Math.tan(x)`       | Returns tangent (radians)                    | `Math.tan(Math.PI/4)`     | `1.0`        |
+| `Math.toRadians(x)` | Converts degrees to radians                  | `Math.toRadians(180)`     | `3.1415...`  |
+| `Math.toDegrees(x)` | Converts radians to degrees                  | `Math.toDegrees(Math.PI)` | `180.0`      |
+| `Math.signum(x)`    | Returns sign of number (-1, 0, or 1)         | `Math.signum(-5)`         | `-1.0`       |
 
