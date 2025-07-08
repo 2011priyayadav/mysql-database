@@ -128,7 +128,50 @@ Operators in Java are used to perform operations on variables and values.
 | Bitwise Operators      | `& | ^ ~ << >> >>>` | Perform operations on bits                    | `5 & 3`                                | `1`          |
 | Ternary Operator       | `? :`               | Shortcut for `if-else` condition              | `int max = (a > b) ? a : b;`           | `greater`    |
 
+----
+## Java String
+## What is a String in Java?
+*In Java, a String is a sequence of characters treated as an object. It is part of the java.lang package and is immutable, meaning its value cannot be changed once created*
 
 
+| Type               | Description                  | Example                                   | Output    |
+| ------------------ | ---------------------------- | ----------------------------------------- | --------- |
+| String Literal     | Stored in string pool        | `String s = "Hello";`                     | `Hello`   |
+| Using `new`        | Stored in heap               | `String s = new String("Hi");`            | `Hi`      |
+| `char[]` to String | Convert char array to string | `new String(new char[]{'J','a','v','a'})` | `Java`    |
+| `StringBuilder`    | Mutable, not thread-safe     | `new StringBuilder("Hi").append(" All")`  | `Hi All`  |
+| `StringBuffer`     | Mutable, thread-safe         | `new StringBuffer("Hi").append(" All")`   | `Hi All`  |
+| `valueOf()`        | Convert primitive to string  | `String.valueOf(123);`                    | `"123"`   |
+| `format()`         | Format string                | `String.format("Age: %d", 25);`           | `Age: 25` |
+
+## Common String Methods
+| Method               | Description                   | Example                           | Output            |
+| -------------------- | ----------------------------- | --------------------------------- | ----------------- |
+| `length()`           | Length of string              | `"Java".length()`                 | `4`               |
+| `charAt()`           | Character at index            | `"Java".charAt(1)`                | `a`               |
+| `substring()`        | Substring of string           | `"Java".substring(1, 3)`          | `av`              |
+| `toUpperCase()`      | Convert to uppercase          | `"java".toUpperCase()`            | `JAVA`            |
+| `toLowerCase()`      | Convert to lowercase          | `"JAVA".toLowerCase()`            | `java`            |
+| `equals()`           | Compare strings               | `"Java".equals("Java")`           | `true`            |
+| `equalsIgnoreCase()` | Compare strings ignoring case | `"Java".equalsIgnoreCase("java")` | `true`            |
+| `contains()`         | Check if contains text        | `"Hello".contains("lo")`          | `true`            |
+| `replace()`          | Replace characters            | `"Test".replace('T','B')`         | `Best`            |
+| `trim()`             | Remove extra spaces           | `"  Java  ".trim()`               | `Java`            |
+| `split()`            | Split string by delimiter     | `"a,b,c".split(",")`              | `["a", "b", "c"]` |
+
+## String Comparison
+| Comparison Method     | Use Case                | Example                           | Result |
+| --------------------- | ----------------------- | --------------------------------- | ------ |
+| `==`                  | Compares memory address | `"Java" == "Java"`                | `true` |
+| `.equals()`           | Compares actual value   | `"Java".equals("Java")`           | `true` |
+| `.equalsIgnoreCase()` | Ignores case            | `"Java".equalsIgnoreCase("java")` | `true` |
+
+##  String Conversion
+| From → To        | Method               | Example                           | Output              |
+| ---------------- | -------------------- | --------------------------------- | ------------------- |
+| int → String     | `String.valueOf()`   | `String.valueOf(123)`             | `"123"`             |
+| String → int     | `Integer.parseInt()` | `Integer.parseInt("123")`         | `123`               |
+| String → char\[] | `.toCharArray()`     | `"Java".toCharArray()`            | `['J','a','v','a']` |
+| char\[] → String | `new String(char[])` | `new String(new char[]{'A','B'})` | `"AB"`              |
 
 
