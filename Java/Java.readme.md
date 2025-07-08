@@ -96,4 +96,22 @@ public class Employee {
 ```
 ## output
 - ID: 101, Name: Priya, Company: TCS
+----
+## Type Casting in Java
+**Type Casting** in Java is the process of converting a variable from one data type to another.
+There are two types of casting in Java: **Widening (implicit)** and **Narrowing (explicit)**.
+### Type Casting Table
+
+| Casting Type         | Definition                                     | Example Code                                               | Output   |
+|----------------------|-----------------------------------------------|-------------------------------------------------------------|----------|
+| Widening Casting     | Converting a smaller type to a larger type. Done automatically by Java. | `int num = 10;`<br>`double result = num;`<br>`System.out.println(result);` | `10.0`   |
+| Narrowing Casting    | Converting a larger type to a smaller type. Requires explicit cast. May lose data. | `double num = 10.75;`<br>`int result = (int) num;`<br>`System.out.println(result);` | `10`     |
+
+
+### Notes
+- **Widening**: No data loss, safe conversion.
+- **Narrowing**: May result in loss of precision or truncation.
+- Always use parentheses `()` for **narrowing casting**.
+
+
 
