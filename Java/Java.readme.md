@@ -1,4 +1,37 @@
 # Core Java
+----
+## Java Comments
+### Types of Comments in Java
+
+| Comment Type         | Syntax               | Example                                                                 |
+|----------------------|----------------------|-------------------------------------------------------------------------|
+| Single-line Comment  | `// comment`         | `// This is a single-line comment`<br>`int age = 25; // Age of user`   |
+| Multi-line Comment   | `/* ... */`          | `/* This is a multi-line comment`<br>`   explaining multiple lines */`  |
+| Documentation Comment| `/** ... */`         | `/**`<br>` * This method prints name`<br>` */`<br>`public void printName() {}` |
+
+---
+
+### Example Showing All 
+```java
+/**
+ * This program demonstrates all types of comments in Java.
+ */
+public class CommentExample {
+    public static void main(String[] args) {
+        // This is a single-line comment
+        int x = 10;
+
+        /* This is a multi-line comment
+           explaining the following calculation */
+        int y = x * 2;
+
+        System.out.println(y); // Output will be 20
+    }
+}
+```
+----
+
+
 ## Variable in Java
 ## What is a Variable in Java?
 *A variable in Java is a named memory location used to store data that can change during the execution of a program.*
