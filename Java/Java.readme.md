@@ -113,5 +113,23 @@ There are two types of casting in Java: **Widening (implicit)** and **Narrowing 
 - **Narrowing**: May result in loss of precision or truncation.
 - Always use parentheses `()` for **narrowing casting**.
 
+----
+## Java Operators
+
+Operators in Java are used to perform operations on variables and values.
+
+### Types of Java Operators
+
+| Operator Type         | Symbol(s)           | Description                                   | Example Code                          | Output       |
+|------------------------|---------------------|-----------------------------------------------|----------------------------------------|--------------|
+| Arithmetic Operators   | `+ - * / %`         | Perform basic math operations                 | `int a = 10 + 5;`                      | `15`         |
+| Relational Operators   | `== != > < >= <=`   | Compare two values                            | `10 > 5`                               | `true`       |
+| Logical Operators      | `&& || !`           | Combine or invert boolean expressions         | `(5 > 3 && 2 < 4)`                     | `true`       |
+| Assignment Operators   | `= += -= *= /=`     | Assign values to variables                    | `int x = 5; x += 3;`                   | `8`          |
+| Unary Operators        | `+ - ++ -- !`       | Perform operations on a single operand        | `int x = 5; x++;`                      | `6`          |
+| Bitwise Operators      | `& | ^ ~ << >> >>>` | Perform operations on bits                    | `5 & 3`                                | `1`          |
+| Ternary Operator       | `? :`               | Shortcut for `if-else` condition              | `int max = (a > b) ? a : b;`           | `greater`    |
+
+
 
 
