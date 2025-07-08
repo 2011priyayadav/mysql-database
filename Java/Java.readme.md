@@ -24,14 +24,20 @@ int: Data type
 ----
 
 ## Java Data Types for Variables
-| Data Type      | Description                        | Example              |
-| -------------- | ---------------------------------- | -------------------- |
-| int            | Integer values                     | `int x = 10;`        |
-| float          | Decimal numbers (single precision) | `float f = 3.14f;`   |
-| double         | Decimal numbers (double precision) | `double d = 9.99;`   |
-| boolean        | True or false values               | `boolean b = true;`  |
-| char           | Single character                   | `char c = 'A';`      |
-| String (class) | Sequence of characters             | `String s = "Java";` |
+## Java Data Types for Variables
+
+| Data Type     | Description                                                | Example               |
+|---------------|------------------------------------------------------------|-----------------------|
+| byte          | Stores whole numbers from -128 to 127                      | `byte b = 100;`       |
+| short         | Stores whole numbers from -32,768 to 32,767                | `short s = 1000;`     |
+| int           | Integer values from -2,147,483,648 to 2,147,483,647        | `int x = 10;`         |
+| long          | Large integers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | `long l = 10000000000L;` |
+| float         | Decimal numbers (single precision, 6-7 digits)             | `float f = 3.14f;`    |
+| double        | Decimal numbers (double precision, ~15 digits)             | `double d = 9.99;`    |
+| boolean       | Stores true or false                                       | `boolean b = true;`   |
+| char          | Stores a single character (16-bit Unicode)                 | `char c = 'A';`       |
+| String (class)| Stores a sequence of characters (object, not primitive)    | `String s = "Java";`  |
+
 
 ## Complete Example (All Variable Types)
 ```java
