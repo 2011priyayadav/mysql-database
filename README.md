@@ -304,6 +304,7 @@ CHECK: Ensures that all values in a column satisfy a specific condition.
 DEFAULT: Sets a default value for a column when no value is specified.
 
 ## difference between DDL and DML commands?
+
 ```SQL
 1. DDL (Data Definition Language):
 
