@@ -253,4 +253,59 @@ public class BooleanExample {
 }
 ```
 ----
+## Java if-else Statement
+
+The `if-else` statement is used to make decisions in Java. It executes one block if a condition is true, otherwise another block.
+
+### Syntax
+
+```java
+if (condition) {
+    // code if true
+} else {
+    // code if false
+}
+```
+## Simple if-else
+```java
+int age = 18;
+if (age >= 18) {
+    System.out.println("Eligible to vote");
+} else {
+    System.out.println("Not eligible");
+}
+```
+## if-else-if Ladder
+```java
+int score = 85;
+if (score >= 90) {
+    System.out.println("Grade A");
+} else if (score >= 75) {
+    System.out.println("Grade B");
+} else {
+    System.out.println("Grade C");
+}
+```
+## Nested if
+```java
+int age = 20;
+boolean hasID = true;
+if (age >= 18) {
+    if (hasID) {
+        System.out.println("Entry allowed");
+    } else {
+        System.out.println("ID required");
+    }
+} else {
+    System.out.println("You must be 18+");
+}
+```
+
+## Java Ternary Operator
+The **ternary operator** is a shortcut for `if-else`. It is used for making quick decisions in a single line.
+### Syntax
+```java
+variable = (condition) ? value_if_true : value_if_false;
+```
+----
 
