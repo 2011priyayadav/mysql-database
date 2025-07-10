@@ -308,4 +308,47 @@ The **ternary operator** is a shortcut for `if-else`. It is used for making quic
 variable = (condition) ? value_if_true : value_if_false;
 ```
 ----
+Here is a new section for your Java.readme.md file, added after the Java Ternary Operator section:
+
+---
+
+## Java Switch Statement
+
+The `switch` statement in Java is used to select one of many code blocks to execute based on the value of an expression. It is a cleaner alternative to multiple `if-else-if` statements.
+
+### Syntax
+```java
+switch (expression) {
+    case value1:
+        // code block
+        break;
+    case value2:
+        // code block
+        break;
+    // more cases...
+    default:
+        // default code block
+}
+```
+
+### Example
+```java
+int day = 3;
+switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+    case 3:
+        System.out.println("Wednesday");
+        break;
+    default:
+        System.out.println("Other day");
+}
+// Output: Wednesday
+```
+
+----
 
