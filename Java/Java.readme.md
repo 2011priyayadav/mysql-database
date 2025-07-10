@@ -352,3 +352,131 @@ switch (day) {
 
 ----
 
+Sure! Here is a clear explanation of looping in Java with examples. You can add the following section to your Java.readme.md file after the "Java Switch Statement" section:
+
+---
+
+## Java Loops
+
+Loops in Java allow you to execute a block of code repeatedly, based on a condition or a set number of times. There are several types of loops in Java:
+
+### 1. for Loop
+
+The `for` loop is used when you know in advance how many times you want to execute a statement or a block of statements.
+
+**Syntax:**
+```java
+for (initialization; condition; increment/decrement) {
+    // code block to be executed
+}
+```
+
+**Example:**
+```java
+for (int i = 1; i <= 5; i++) {
+    System.out.println("Count: " + i);
+}
+// Output:
+// Count: 1
+// Count: 2
+// Count: 3
+// Count: 4
+// Count: 5
+```
+
+---
+
+### 2. while Loop
+
+The `while` loop is used when the number of iterations is not known in advance. The loop continues as long as the condition is true.
+
+**Syntax:**
+```java
+while (condition) {
+    // code block to be executed
+}
+```
+
+**Example:**
+```java
+int i = 1;
+while (i <= 5) {
+    System.out.println("Number: " + i);
+    i++;
+}
+// Output:
+// Number: 1
+// Number: 2
+// Number: 3
+// Number: 4
+// Number: 5
+```
+
+---
+
+### 3. do-while Loop
+
+The `do-while` loop is similar to the `while` loop, but it guarantees that the code block is executed at least once.
+
+**Syntax:**
+```java
+do {
+    // code block to be executed
+} while (condition);
+```
+
+**Example:**
+```java
+int i = 1;
+do {
+    System.out.println("Value: " + i);
+    i++;
+} while (i <= 5);
+// Output:
+// Value: 1
+// Value: 2
+// Value: 3
+// Value: 4
+// Value: 5
+```
+
+---
+
+### 4. Enhanced for Loop (for-each)
+
+The enhanced `for` loop is used to iterate over arrays or collections.
+
+**Syntax:**
+```java
+for (type variable : array) {
+    // code block to be executed
+}
+```
+
+**Example:**
+```java
+int[] numbers = {1, 2, 3, 4, 5};
+for (int num : numbers) {
+    System.out.println(num);
+}
+// Output:
+// 1
+// 2
+// 3
+// 4
+// 5
+```
+
+---
+
+**Summary Table**
+
+| Loop Type      | Use Case                                 | Example                                      |
+|----------------|------------------------------------------|----------------------------------------------|
+| `for`          | Known number of iterations               | `for (int i = 0; i < n; i++) { }`           |
+| `while`        | Unknown number, condition checked first  | `while (condition) { }`                      |
+| `do-while`     | Unknown number, executes at least once   | `do { } while (condition);`                  |
+| `for-each`     | Iterating over arrays/collections        | `for (int x : arr) { }`                      |
+
+---
+
