@@ -480,3 +480,59 @@ for (int num : numbers) {
 
 ---
 
+An array in Java is a data structure that stores a fixed-size sequence of elements of the same type. Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+
+## Key Points
+- Arrays can hold primitive types (int, float, etc.) or objects.
+- The size of an array is defined when it is created and cannot be changed.
+- Each element is accessed by its index (starting from 0).
+
+## Syntax
+```java
+// Declaration and initialization
+int[] numbers = new int[5]; // array of 5 integers
+
+// Assigning values
+numbers[0] = 10;
+numbers[1] = 20;
+numbers[2] = 30;
+numbers[3] = 40;
+numbers[4] = 50;
+
+// Declaration with initialization
+int[] moreNumbers = {5, 10, 15, 20, 25};
+```
+
+## Example: Printing Array Elements
+```java
+public class ArrayExample {
+    public static void main(String[] args) {
+        int[] numbers = {10, 20, 30, 40, 50};
+        
+        // Accessing elements using a loop
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println("Element at index " + i + ": " + numbers[i]);
+        }
+    }
+}
+// Output:
+// Element at index 0: 10
+// Element at index 1: 20
+// Element at index 2: 30
+// Element at index 3: 40
+// Element at index 4: 50
+```
+
+## Enhanced for loop with arrays
+```java
+for (int num : numbers) {
+    System.out.println(num);
+}
+```
+
+Arrays can also store other types, like `String[] names = {"Alice", "Bob", "Charlie"};`.
+
+**Summary:**  
+- Arrays are useful for storing and managing multiple values of the same type.
+- Access elements using indices.
+- Use loops to process arrays efficiently.
