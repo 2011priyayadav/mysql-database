@@ -36,9 +36,37 @@ public class FirstTestCase {
 		System.out.println("URL: "+ driver.getCurrentUrl());
 		
 	}
+ }
 	
+## Locators ##
 
-}
+1 .Identify web elements 
+
+##locators 2 types##
+
+1. Basci locating streategies
+2. Customized locating strategies
+
+## Basci locating streategies ##
+1. BY Id
+2. BY Name
+3. By Link text
+4. By partial link text
+
+
+## Customized locating Streategies##
+1. By CSS
+2. Xpath
+
+
+
+
+
+
+
+
+
+
 
 
 
